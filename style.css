@@ -38,6 +38,7 @@ html {
   color: gray;
   font-weight: 100;
   margin: 0 0;
+  letter-spacing: 0.8rem;
 }
 
 .card h3 {
@@ -45,6 +46,7 @@ html {
   color: darkblue;
   font-weight: 800;
   margin: 0 0;
+  height: 100px;
 }
 
 .card p {
@@ -65,11 +67,9 @@ p {
 
 .centering-btn {
   max-width: 375px;
-  max-height: 10rem;
-  padding: 1rem 2rem;
-  padding-bottom: 2rem;
+  max-height: 5rem;
+  padding: 0rem 2rem;
   font-size: 1.5rem;
-  margin-top: 1rem;
 }
 
 button {
@@ -83,9 +83,12 @@ button {
 
 .disc-price {
   font-size: 4rem;
+  margin: 0 0;
   margin-right: 2rem;
 }
 
 .list-price {
   text-decoration: line-through;
+  margin: 0 0;
+  margin-right: 2rem;
 }
