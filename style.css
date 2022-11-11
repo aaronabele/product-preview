@@ -1,113 +1,91 @@
 html {
-  background: hsl(30, 38%, 92%);
+  background-color: hsl(30, 38%, 92%);
   font-size: 10px;
-  font-family: "Fraunces", serif;
-  font-family: "Montserrat", sans-serif;
 }
 
-.overall {
-  /*creating grid layout*/
+.cards {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, max-content);
-  /*styling*/
-  margin-top: 2rem;
-}
-
-.parfum-pic {
-  /*gird layout*/
-  grid-column-start: 2;
-  grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-end: 1;
-  /*styling*/
-  width: 90vw;
-  height: auto;
-  border-radius: 1rem 1rem 0rem 0rem;
-}
-
-.centering-items {
-  /*gird layout*/
-  grid-column-start: 2;
-  grid-column-end: 2;
-  grid-row-start: 2;
-  grid-row-end: 2;
-  /*styling*/
-  padding: 1rem 1rem;
-  background-color: white;
-  border-radius: 0rem 0rem 1rem 1rem;
-}
-
-#Perfume {
-  /*styling*/
-  margin: 0 0;
-  padding: 1rem 1rem;
-  font-size: 1.6rem;
-  font-weight: 500;
-  letter-spacing: 0.5rem;
-  color: hsl(228, 12%, 48%);
-  font-family: "Montserrat";
-}
-
-#Gabrielle {
-  /*styling*/
-  margin: 0 0;
-  padding: 1rem 1rem;
-  font-size: 3.2rem;
-  color: hsl(212, 21%, 14%);
-  font-family: "Fraunces";
-  font-weight: 700;
-}
-
-.centering-items p {
-  /*styling*/
-  margin: 1rem 0rem;
-  padding: 1rem 1rem;
-  font-size: 1.6rem;
-  color: hsl(228, 12%, 48%);
-  font-family: "Montserrat";
-  font-weight: 500;
-}
-
-.centering-prices {
-  display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
-  flex-direction: row;
-}
-
-#discounted-price {
-  margin-right: 1rem;
-  padding: 0.3rem;
-  font-size: 3rem;
-  color: hsl(158, 36%, 37%);
-  font-family: "Fraunces";
-  font-weight: 700;
-}
-
-#list-price {
-  padding: 0.3rem;
-  font-size: 1.6rem;
-  text-decoration: line-through;
-  font-family: "Fraunces";
-  font-weight: 700;
-}
-
-.centering-button {
-  height: 5rem;
-  display: flex;
-  justify-content: start;
-  align-items: center;
-}
-
-#add-to-cart {
-  height: 4rem;
-  width: 84vw;
-  background-color: hsl(158, 36%, 37%);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-column-gap: 1rem;
+  border-radius: 1rem;
   border: none;
-  color: hsl(0, 0%, 100%);
+  margin-left: 2rem;
+  margin: 2rem;
+  max-height: 100%;
+}
+
+.card {
+  background-color: white;
+  text-align: left;
+  max-width: 335px;
+  max-height: 900px;
+  height: 900px;
+  border-radius: 1rem;
+  border: none;
+  margin-bottom: 2rem;
+}
+
+.card img {
+  max-width: 100%;
+  max-height: 400px;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.card h2 {
   font-size: 1.8rem;
-  border-radius: 5px;
-  font-family: "Fraunces";
-  font-weight: 500;
+  color: gray;
+  font-weight: 100;
+  margin: 0 0;
+}
+
+.card h3 {
+  font-size: 3rem;
+  color: darkblue;
+  font-weight: 800;
+  margin: 0 0;
+}
+
+.card p {
+  font-size: 1.8rem;
+  color: gray;
+  font-weight: 400;
+  margin: 0 0;
+  height: 10rem;
+  min-height: 10rem;
+  max-height: 10rem;
+}
+
+.card h2,
+h3,
+p {
+  padding: 1rem 2rem;
+}
+
+.centering-btn {
+  max-width: 375px;
+  max-height: 10rem;
+  padding: 1rem 2rem;
+  padding-bottom: 2rem;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+button {
+  width: 100%;
+  height: 5rem;
+  border: none;
+  border-radius: 1rem;
+  background-color: darkblue;
+  color: white;
+}
+
+.disc-price {
+  font-size: 4rem;
+  margin-right: 2rem;
+}
+
+.list-price {
+  text-decoration: line-through;
 }
